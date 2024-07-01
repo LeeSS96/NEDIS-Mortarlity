@@ -1,1 +1,8 @@
 # NEDIS-Mortarlity
+Physical trauma–related mortality places a heavy burden on society. Estimating the mortality risk in physical trauma patients is crucial to enhance treatment efficiency and reduce this burden. The most popular and accurate model is the Injury Severity Score (ISS), which is based on the Abbreviated Injury Scale (AIS), an anatomical injury severity scoring system. However, the AIS requires specialists to code the injury scale by reviewing a patient's medical record; therefore, applying the model to every hospital is impossible.
+
+We aimed to develop an artificial intelligence (AI) model to predict in-hospital mortality in physical trauma patients using the International Classification of Disease 10th Revision (ICD-10), triage scale, procedure codes, and other clinical features.
+
+We used the Korean National Emergency Department Information System (NEDIS) data set (N=778,111) compiled from over 400 hospitals between 2016 and 2019. To predict in-hospital mortality, we used the following as input features: ICD-10, patient age, gender, intentionality, injury mechanism, and emergent symptom, Alert/Verbal/Painful/Unresponsive (AVPU) scale, Korean Triage and Acuity Scale (KTAS), and procedure codes. We proposed the ensemble of deep neural networks (EDNN) via 5-fold cross-validation and compared them with other state-of-the-art machine learning models, including traditional prediction models. We further investigated the effect of the features.
+
+Our proposed EDNN with all features outperforms other state-of-the-art models, including the traditional diagnostic code-based prediction model and triage scale.
